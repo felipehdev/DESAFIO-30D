@@ -131,8 +131,8 @@
 .post-call-container {
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  height: ;
+  width: 75%;
+  height: 100%;
   background-color: cornsilk;
 }
 .category-and-post-little-text-container {
@@ -224,8 +224,5 @@
   .top-reads-container {
     width: 100%;
   }
-  
-
-
 }
 
