@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700;800&display=swap');
+
+
 * {
   padding: 0px;
   margin: 0px;
   border: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
+
 }
 
 :root {
@@ -27,7 +31,8 @@ body {
   justify-content: center;
   border-bottom: 4px solid;
   background-color: white;
-  z-index: 1;
+  z-index: 1;  
+  box-shadow: 0rem 0.4rem 0.8rem #c9c7c7;
 }
 .navbar-container {
   width: 80%;
@@ -40,12 +45,12 @@ body {
   z-index: 1;
 }
 .logo {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Fredoka', sans-serif;
   letter-spacing: 0.15rem;
   text-shadow: 0rem 0rem 0.6rem #c0bebe;
   color: black;
 }
-.navbarlinks {
+.navbar-links-container {
   width: 400px;
 }
 .navbar-list {
@@ -56,34 +61,15 @@ body {
 .navbar-list-item {
   margin: 6px 6px;
   text-shadow: 0rem 0rem 0.4rem #535353;
-  color: black;
 }
 .navbar-link {
   font-weight: 700;
   text-decoration: none;
   text-transform: capitalize;
+  color: black;
 }
 .filler {
   height: 5rem;
-}
-.ads-container {
-  z-index: -1px;
-  position: relative;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 98%;
-  height: 250px;
-  background-color: var(--destac-color-two);
-  border-radius: 4px;
-}
-.ads {
-  width: 92%;
-  height: 92%;
-  background-color: antiquewhite;
 }
 
 /*site-content*/
@@ -106,10 +92,11 @@ body {
   align-items: center;
 }
 .banner {
-  margin-top: 0.4rem;
-  width: 98%;
-  height: 350px;
-  background-color: var(--destac-color-one);
+  margin-top: 0.8rem;
+  width: 94%;
+  height: 150px;
+  background-color: #c0bebe;
+  border-radius: 4px;
 }
 .posts-container {
   width: 100%;
@@ -130,24 +117,31 @@ body {
   font-size: 1.2rem;
 }
 .all-posts {
-  border: 2px solid black;
-  border-left: 12px solid black;
+  border-bottom: 1px solid #c9c7c7;
   margin-top: 0.8rem;
   display: flex;
   align-items: center;
   width: 95%;
   height: 160px;
   background-color: #f1f1f1;
+  border-radius: 4px;
 }
 .post-one-container {
   margin-top: 0.4rem;
 }
 .post-img-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 0.8rem;
   height: 150px;
   width: 150px;
   min-width: 150px;
-  border-right: 6px solid cornflowerblue;
+  border-right: 6px solid #c9c7c7;
+}
+.post-img {
+  width: 140px;
+  overflow: hidden;
 }
 .post-call-container {
   margin-left: 0.8rem;
@@ -168,27 +162,29 @@ body {
 }
 .category {
   margin-left: 0.4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  border-radius: 2px;
   display: flex;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  background-color: #e4f830;
+  font-weight: 400;
+  background-color: #c9c7c7;
 }
 .post-title-bar {
   margin-left: 0.4rem;
   font-weight: 700;
+
 }
-.post-little-text {
+.post-little-text {  
   display: inline;
   width: fit-content;
   margin-left: 0.4rem;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 .post-title {
+  font-size: 1.2rem;
   margin-left: 0.8rem;
   width: 100%;
   text-transform: uppercase;
@@ -196,6 +192,7 @@ body {
 .post-seo {
   margin-left: 0.8rem;
   margin-top: 0.4rem;
+  min-height: 60px;
 }
 .read-more {
   margin-left: 2.4rem;
@@ -236,14 +233,15 @@ body {
   list-style: none;
   font-size: larger;
   text-transform: capitalize;
+  font-weight: 700;
 }
 .sidebar-first-ad {
-  z-index: -2;
   position: sticky;
   top: 6rem;
   height: 700px;
   width: 98%;
-  background-color: cornsilk;
+  background-color: #c0bebe;
+  border-radius: 4px;
 }
 /*footer*/
 .footer-container {
@@ -261,7 +259,7 @@ body {
   display: flex;
   width: 98%;
   max-width: 1200px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .footer-list-title {
   color: #f1f1f1;
